@@ -8,7 +8,7 @@ import ChapterPage from './chapter-page.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <BrowserRouter basename="/personal-annotations">
+    <BrowserRouter>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/:bookTitle/chapters" element={<ChaptersPage />} />
